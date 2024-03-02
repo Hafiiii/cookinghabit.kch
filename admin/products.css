@@ -1,0 +1,153 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    margin-left: 500px;
+    margin-top: 125px; 
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    color: black;
+}
+
+label {
+    font-weight: medium;
+    font-size: 14px;
+    color: #6B6B6B;
+}
+
+#product-search {
+    width: 536px;
+    height: 20px;
+    background-color: #F3F3F3;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    padding: 5px; 
+}
+
+.search-bar {
+    margin-top: 10px;
+}
+
+.categories {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.categories button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: medium;
+    letter-spacing: 6.5%;
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.categories button::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #D7BAA9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.categories button:hover::after,
+.categories button:focus::after {
+    width: 100%;
+}
+
+.info-bar {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+#add-product-btn {
+    margin-top: 10px;
+    margin-right: 280px;
+    width: 223px;
+    height: 42px;
+    background-color: #E9D7CC;
+    border: none;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#add-product-btn:hover {
+    background-color: #b99e8d;
+    color: rgb(255, 255, 255);
+}
+
+/* Style for the product table */
+.product-table {
+    max-width: 800px; 
+    margin-right: 100px;
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Style for the table header */
+.table-header {
+    background-color: #E0D8D4;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: medium;
+    font-size: 14px;
+}
+
+/* Style for the table rows */
+.table-row {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc; 
+    padding: 10px;
+}
+
+/* Style for the product image in each row */
+.product-image {
+    max-width: 50px; 
+    max-height: 50px;
+}
+
+/* Optional: Style for buttons in each row */
+.table-row button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #626262;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Optional: Hover effect for buttons */
+.table-row button:hover {
+    background-color: #626262;
+}

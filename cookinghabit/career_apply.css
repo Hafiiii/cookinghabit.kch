@@ -1,0 +1,257 @@
+@font-face {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-display: fallback;
+    src: url("font/Poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PlayfairDisplay";
+    font-weight: 400;
+    font-display: fallback;
+    src: url("font/Playfair_Display/PlayfairDisplay-Medium.ttf") format("truetype");
+}
+
+body {
+    background: #F3F3F3;
+    color: black;
+    font-family: "Poppins", "PlayfairDisplay";
+    font-style: normal;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    max-width: 100%;
+    position: relative;
+    margin-top: 60px;
+}
+
+.banner img {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-text {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    bottom: 40%;
+    text-align: center;
+    background: none;
+}
+
+.banner-text p {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+    letter-spacing: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .banner-text p {
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+}
+
+
+
+.back-page {
+    margin: 30px 0 0 30px;
+}
+
+.back-page img {
+    width: 14px;
+    height: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .back-page {
+        margin: 20px 0 0 20px;
+    }
+    .back-page img {
+        width: 10px;
+    }
+}
+
+
+.career-section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.career-sentence p {
+    font-size: 30px; 
+    font-family: Original Surfer; 
+    text-align: center;
+    letter-spacing: 2px; 
+    margin: 50px 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .career-sentence p {
+        font-size: 18px; 
+        letter-spacing: 1px; 
+        margin: 20px 0;
+    }
+}
+
+
+
+
+
+
+form {
+    margin: 50px 350px;
+    position: relative;
+    z-index: 1;
+}
+
+label, form p {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+    margin: 50px 0 10px 0;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    background-color: #DFC7BA;
+    border: 1px black solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+textarea.career_address {
+    height: 80px;
+}
+
+@media screen and (max-width: 1200px) {
+    form {
+        margin: 90px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    form {
+        margin: 0px;
+    }
+    label, form p {
+        font-size: 14px;
+        margin: 20px 0 10px 0;
+    }   
+}
+
+
+
+
+.jobtype-container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 17px;
+    margin: 15px 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.jobtype-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px black solid;
+    margin-top: 2px;
+}
+
+.jobtype-container:hover input ~ .checkmark {
+    background-color: #DFC7BA;
+
+}
+
+.jobtype-container:checked ~ .checkmark {
+    background-color: #DFC7BA;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.jobtype-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.jobtype-container .checkmark:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #DFC7BA;
+}
+
+
+
+
+.upload-resume {
+    margin: 80px 0 10px 0;
+    font-family: "Poppins";
+}
+
+.upload-btn {
+    text-align: center;
+    margin: 100px 0;
+}
+
+button {
+    background-color: #FFEDE5;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border: none;
+    font-family: "Poppins";
+    font-size: 16px;
+    padding: 15px 50px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+button:hover {
+    color: black;
+    background: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .upload-resume {
+        margin: 40px 0 10px 0;
+    }
+    .upload-btn {
+        margin: 50px 0;
+    } 
+    button {
+        padding: 10px 40px;
+    }
+}

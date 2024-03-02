@@ -1,0 +1,209 @@
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-display: fallback;
+  src: url("font/Poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+body {
+  background: #F3F3F3;
+  color: black;
+  font-family: "Poppins";
+  font-style: normal;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  max-width: 100%;
+  position: relative;
+  margin-top: 60px;
+}
+
+.banner img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.banner-text {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  bottom: 40%;
+  text-align: center;
+  background: none;
+}
+
+.banner-text p {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+  letter-spacing: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .banner-text p {
+      font-size: 13px;
+      letter-spacing: 3px;
+  }
+}
+
+
+.sentence{
+  text-align: center;
+}
+
+.sentences{
+  color: black; 
+  font-size: 34px; 
+  font-weight: 400; 
+  letter-spacing: 2.34px; 
+  margin: 100px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .sentences{
+    font-size: 16px; 
+    letter-spacing: 1px; 
+    margin: 30px 0;
+  }
+}
+
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.left-column {
+  flex: 1;
+  margin-right: 200px;
+}
+
+.left-column img {
+  width: 500px;
+  height: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .left-column {
+    text-align: center;
+  } 
+  .left-column img {
+    width: 250px;
+  }
+}
+
+
+
+.right-column {
+  flex: 1;
+}
+
+.right-column label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.button-group input[type="radio"] {
+  display: none;
+}
+
+.button-group label {
+  background-color: #DFC7BA;
+  border: 2px solid #DFC7BA;
+  border-radius: 6px;
+  margin-right: 5px;
+  cursor: pointer;
+  text-align: center;
+  padding: 13px 20px;
+  font-size: 14px;
+}
+
+.button-group label:hover {
+  border: 2px solid #86939E;
+}
+
+.button-group input[type="radio"]:checked + label {
+  border: 2px solid #86939E;
+}
+
+@media screen and (max-width: 1000px) {
+  .button-group label {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+
+
+
+#total-price-display {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #43474D;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  #total-price-display {
+    font-size: 22px;
+  }
+}
+
+
+
+
+
+.addCart-btn {
+  margin-top: 20px;
+}
+
+.addCart-btn button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.addCart-btn button:hover {
+  background-color: #dfc7ba83;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    flex: none;
+    width: 100%;
+  }
+  .addCart-btn button {
+    font-size: 12px;
+  }
+}

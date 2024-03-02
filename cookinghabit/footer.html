@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: "Poppins";
+            font-weight: 400;
+            font-display: fallback;
+            src: url("font/Poppins/Poppins-Medium.ttf") format("truetype");
+        }
+        @font-face {
+            font-family: "PlayfairDisplay";
+            font-weight: 400;
+            font-display: fallback;
+            src: url("font/Playfair_Display/PlayfairDisplay-Medium.ttf") format("truetype");
+        }
+        .footer {
+            background-color: #ebe9e9;
+            font-family: "Poppins", "PlayfairDisplay";
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: #0D0D25;
+            text-align: center;
+            padding-bottom: 3px;
+        }
+        .information-column {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(350px, 30px));
+            justify-content: center;
+        }
+        .first-column img {
+            width: 100px;
+            height: auto;
+        }
+        .second-column img {
+            width: 18px;
+            height: auto;
+            margin-left: 5px;
+        }
+        .first-column p, .third-column a {
+            font-family: "Poppins";
+            font-size: 16px;
+            color: #212529;
+            text-decoration: none;
+        }
+        .second-column a {
+            text-decoration: none;
+            color: #212529;
+            font-family: "Poppins";
+            font-weight: 400;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .third-column a {
+            margin-bottom: 10px;
+        }
+        .second-column h1, .third-column h1{
+            font-size: 24px;
+            font-family: "PlayfairDisplay";
+        }
+        .third-column {
+            display: flex;
+            flex-direction: column;
+        }
+        .copyright-column {
+            border: none;
+            border-top: 1px black solid;
+        }
+        .copyright-column p {
+            font-size: 10px;
+            align-items: center;
+            justify-content: center;
+            font-family: "Poppins";
+        }
+        @media screen and (max-width: 1000px) {
+            .information-column {
+                grid-template-columns: repeat(2, minmax(150px, 1fr));
+            }        
+            .first-column {
+                display: none;
+            }           
+            .first-column p, .second-column span, .second-column a, .third-column a {
+                font-size: 10px;
+            }
+            .second-column h1, .third-column h1{
+                font-size: 14px;
+            } 
+            .second-column img {
+                width: 12px;
+                height: auto;
+                margin: 0 2px;
+            }          
+            .copyright-column {
+                font-size: 6px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="information-column">
+            <div class="first-column">
+                <a href="index.php"><img src="image/logo.png"></a>
+                <p>by Irma Shafiqah</p>
+            </div>
+            <div class="second-column">
+                <h1>Follow Us On</h1>
+                <a href="https://www.instagram.com/cookinghabit.kch?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank"><img src="image/instagram.png">&nbsp;&nbsp;INSTAGRAM</a>
+            </div>
+            <div class="third-column">
+                <h1>Contact Us</h1>
+                <a href="https://api.whatsapp.com/send/?phone=%2B60179219897&text&type=phone_number&app_absent=0" target="_blank">+6017 921 9897</a>
+                <a href="mailto:cookinghabit.kch@gmail.com">cookinghabit.kch@gmail.com</a>
+            </div>
+        </div>
+
+        <div class="copyright-column">
+            <p>Copyright © 2023 Cloud Storms. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

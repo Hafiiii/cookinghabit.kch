@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: "Poppins";
+            font-weight: 400;
+            font-display: fallback;
+            src: url("font/Poppins/Poppins-Medium.ttf") format("truetype");
+        }
+        body {
+            color: black;
+            font-family: "Poppins";
+            font-style: normal;
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+        }
+        #nav {
+            background-color: #F7F7F7;
+            top: 0%;
+            position: fixed;
+            overflow: hidden;
+            display: block;
+            transition: top 0.4s;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            z-index: 999;
+            height: 70px;
+            width: 100%;
+        }
+        .nav-item {
+            float: inline-start;
+            display: block;
+            text-decoration: none;
+        }
+        .nav-center {
+            margin-left: 400px;
+        }
+        .center {
+            margin-left: 20px;
+            text-align: center;
+            letter-spacing: 2px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #2a2d34;
+            padding: 6px 20px 6px 20px;
+            margin-top: 14px;
+        }
+        .center:hover {
+            background: #F9F9F9;
+            border-radius: 42px;
+            color: #FFAB80;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25) inset;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .left {
+            padding-left: 180px;
+            margin-top: 20px;
+        }
+        .right {
+            float: right;
+            padding-right: 50px;
+            margin-top: 20px;
+            font-size: 16px;
+            color: black;
+        }
+        .right:hover {
+            color: black;
+        }
+        .left img {
+            width: 45px;
+            height: auto;
+        }
+        .cart img {
+            width: 30px;
+            height: auto;
+        }        
+        @media screen and (max-width: 1000px) {
+            #nav {
+                height: 60px;
+            }       
+            .nav-center {
+                margin-left: 0px;
+            }        
+            .center {
+                margin-left: 0px;
+                font-size: 12px;
+                margin-top: 12px;
+                padding: 8px;
+                letter-spacing: 0;
+            }           
+            .center:hover {
+                font-size: 12px;
+            }           
+            .left {
+                display: none;
+            }         
+            .right {
+                float: right;
+                padding-right: 20px;
+                margin-top: 19px;
+            }        
+            .cart img {
+                width: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <div id="nav">
+        <a href="index.php" class="nav-item left"><img src="image/logo.png"></a>
+        <div class="nav-center">
+            <a href="index.php" class="nav-item center">Home</a>
+            <a href="menu.php" class="nav-item center">Menu</a>
+            <a href="customize.php" class="nav-item center">Customize</a>
+            <a href="career.html" class="nav-item center">Career</a>
+            <a href="contact.html" class="nav-item center">Contact</a>
+        </div>
+        <a href="cart.php" class="nav-item right cart"><img src="image/cart.png"></a>
+    </div>
+</body>
+</html>

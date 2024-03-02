@@ -1,0 +1,66 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    margin-left: 500px;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    color: black;
+}
+
+/* Additional styling for the info box */
+.info-box {
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    width: 160px;
+    height: 110px;
+    margin-right: 100px;
+    text-align: center;
+    display: inline-block;
+}
+
+.info-box p{
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.info-box label{
+    font-size: 16px;
+    font-weight: 400;
+    color: #6B6B6B;
+}
+
+/* Optional: Additional styling for the chart canvas */
+canvas {
+    display: block;
+    width: 100%;
+    max-width: 500px; /* Adjusted width to 300px */
+    height: 100%;
+    max-height: 300px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.sales-chart {
+    margin-left: 500px;
+    margin-top: 10px; /* Adjusted margin-top for sales chart */
+    padding: 20px;
+}
+
+p {
+    font-size: 14px;
+    font-weight: medium;
+    color: #6B6B6B;
+}

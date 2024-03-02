@@ -1,0 +1,122 @@
+<!DOCTYPE htmL>
+<html Lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="custome.css" />
+        <link rel="stylesheet" href=
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <title>Customize</title>
+    </head>
+    <body>
+        <script src="custome.js"></script>
+        <div class="center">
+            <div class="banner">
+                <div class="banner-img"><img src="customize-banner.png" alt="banner for career" /></div>
+                <div class="banner-title"><p>Customize you own cake now</p></div>
+            </div>
+            <div class="sentence">
+                <p class="sentences">SHORTCAKE CUSTOMIZE</p>
+            </div>          
+        </div>
+
+        <main class="container">
+ 
+            <!-- right Column / cakes Image -->
+            <div class="left-column">
+              <img data-image="black" src="cake1.png" alt="">
+            </div>
+           
+            <!-- Right Column -->
+  <div class="right-column">
+
+    <!-- Product Configuration -->
+    <div class="product-configuration">
+   
+        <!-- cake size -->
+        <div class="cable-config">
+          <span>Size</span>
+   
+          <div class="size-choose">
+            <button class="size-btn" data-price="30">6 Inces</button>
+            <button class="size-btn" data-price="40">7 Inches</button>
+            <button class="size-btn" data-price="50">8 Inches</button>
+          </div>
+
+          <div class="cable-config">
+            <span>Flavour</span>
+     
+            <div class="flavour-choose">
+              <button class="flavour-btn" data-price="10">Vanilla</button>
+              <button class="flavour-btn" data-price="10">Chocolate</button>
+              <button class="flavour-btn" data-price="10">Butterscotch</button>
+              <button class="flavour-btn" data-price="10">Red Velvet</button>
+              <button class="flavour-btn" data-price="15">Pandan Gula Melaka</button>
+            </div>
+
+            <div class="cable-config">
+                <span>Topping </span>
+         
+                <div class="topping-choose">
+                  <button class="topping-btn" data-price="5">Strawberry</button>
+                  <button class="topping-btn" data-price="5">Red Cherry</button>
+                  <button class="topping-btn" data-price="5">Kiwi</button>
+                  <button class="topping-btn" data-price="8">Shine Muscat</button>
+                </div>
+      
+
+            <div class="cable-config">
+                <span>Option</span>
+         
+                <div class="cable-choose">
+                  <button class="option-btn" data-price="0">No Wording</button>
+                  <button class="option-btn" data-price="7">Wording fondant banner</button>
+                  <button class="option-btn" data-price="4">Wording buttercream piping</button>
+                </div>
+        </div>
+ </div>
+   
+      <!-- Product Pricing -->
+    <div class="product-price">
+      <span>Total: <span id="total-price">0$</span></span>
+      <a href="#" class="cart-btn">Add to cart</a>
+    </div>
+
+    </div>
+    
+    <script>
+    // Function to calculate and display the total sum
+    function updateTotal() {
+        var total = 0;
+        // Get all buttons with the specified classes
+        var buttons = document.querySelectorAll('.size-btn, .flavour-btn, .topping-btn, .option-btn');
+        
+        // Iterate through the buttons and sum their prices
+        buttons.forEach(function(button) {
+            if (button.classList.contains('active')) {
+                total += parseFloat(button.getAttribute('data-price'));
+            }
+        });
+
+        // Display the total sum
+        document.getElementById('total-price').textContent = total + '$';
+    }
+
+    // Function to handle button clicks
+    function handleButtonClick(button) {
+        button.classList.toggle('active'); // Toggle the 'active' class
+        updateTotal(); // Update the total sum
+    }
+
+    // Add click event listeners to all buttons
+    var allButtons = document.querySelectorAll('.size-btn, .flavour-btn, .topping-btn, .option-btn');
+    allButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            handleButtonClick(this);
+        });
+    });
+  </script>
+  </main>
+
+</div>

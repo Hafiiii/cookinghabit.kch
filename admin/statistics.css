@@ -1,0 +1,45 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    margin-left: 500px;
+    margin-top: 125px;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    color: black;
+}
+
+/* Additional styling for the info box */
+.info-box {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid #A17459;
+    background-color: #F3F3F3;
+    width: 120px;
+    height: 60px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+
+/* Optional: Additional styling for the chart canvas */
+canvas {
+    display: block;
+    width: 100%; /* Make the canvas take 100% width */
+    max-width: 800px; /* Set a maximum width */
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}

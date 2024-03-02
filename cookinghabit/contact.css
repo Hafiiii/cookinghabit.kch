@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-display: fallback;
+    src: url("font/Poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+body, html {
+    background-color: #F3F3F3;
+    color: black;
+    font-family: "Poppins";
+    font-style: normal;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+.contact {
+    padding-top: 60px;
+}
+
+.contact-title h1 {
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 12px;
+    font-weight: 600;
+    margin: 50px 0;
+}
+
+.contact-title img {
+    width: 65%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-logo-social {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 30px));
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-logo img {
+    width: 200px;
+    height: auto;
+}
+
+.contact-social {
+    line-height: 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-social a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.contact-social a:hover {
+    color: black;
+}
+
+@media screen and (max-width: 1000px) {
+    .contact-title h1 {
+        font-size: 40px;
+        letter-spacing: 5px;
+    }      
+    .contact-logo-social {
+        padding: 50px;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 30px));
+    } 
+    .contact-social {
+        text-align: center;
+    }
+    .contact-logo img {
+        width: 100px;
+    }
+    .contact-social a {
+        font-size: 15px;
+        line-height: 35px;
+    }
+}

@@ -1,0 +1,100 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 187px;
+    margin-left: 312px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    color: black;
+}
+
+form {
+    margin-top: 10px;
+    margin-left: 312px;
+    margin-right: 312px;
+    z-index: 1;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    left: 52px;
+    z-index: 2;
+}
+
+.logo img {
+    width: 170px;
+    height: 100px;
+}
+
+#imagePreview {
+    max-width: 100%;
+    max-height: 200px;
+    margin-top: 10px;
+}
+
+label {
+    color: #6B6B6B;
+    font-weight: medium;
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #F3F3F3;
+    border: 1px solid #C4C4C4;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+textarea.product_name {
+    width: 536px;
+    height: 32px;
+}
+
+textarea.product_description {
+    width: 536px;
+    height: 100px;
+}
+
+button[name="save"],
+button[name="cancel"] {
+    width: 223px;
+    height: 42px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button[name="save"] {
+    background-color: #E9D7CC;
+    border: 1px solid #E9D7CC;
+    color: rgb(0, 0, 0);
+}
+
+button[name="save"]:hover {
+    background-color: #b99e8d;
+    border-color: #b99e8d;
+    color: rgb(255, 255, 255);
+}
+
+button[name="cancel"] {
+    background-color: #F3F3F3;
+    border: 1px solid #b99e8d;
+    color: #000000;
+    font-weight: medium;
+}

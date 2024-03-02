@@ -1,0 +1,206 @@
+@font-face {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-display: fallback;
+    src: url("font/Poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+body, html {
+    background-color: #F3F3F3;
+    color: black;
+    font-family: "Poppins";
+    font-style: normal;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+.cart-container {
+    margin-top: 70px;
+}
+
+.top-section {
+    width: 100%;
+    text-align: center;
+}
+
+.header-title {
+    background-color: #BCA69A;
+    text-align: center;
+}
+
+.header-title p {
+    font-size: 21px;
+    color: white;
+    padding: 10px 0;
+    letter-spacing: 3px;
+}
+
+.button-title {
+    position: relative;
+    padding: 30px 0 80px 0;
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-title {
+    position: absolute;
+    left: 0;
+}
+
+.continue-title {
+    position: absolute;
+    right: 0;
+}
+
+.button-title h1 {
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+.button-title a {
+    text-decoration: none;
+    font-size: 21px;
+    letter-spacing: 3px;
+    color: #BCA69A;
+}
+
+.button-title a:hover {
+    color: #BCA69A;
+}
+
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    
+}
+
+.container-header {
+    text-align: center;
+}
+
+.cart-content {
+    border-bottom-style: solid;
+    text-align: center;
+}
+
+.container-header th {
+    background-color: #DFC7BA;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.productname {
+    text-align: left;
+}
+
+
+.cart-content tr {
+    padding: 100px;
+    text-align: center;
+}
+
+.cart-content td {
+    padding: 30px 0;
+    border-bottom: 2px #DFC7BA solid;
+}
+
+.total-row {
+    padding: 30px 0;
+}
+
+
+.total-text { 
+    text-align: right;
+    font-size: 20px;
+    
+} 
+
+.totalprice-text {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.button-cell {
+    margin: 100px auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.button-cell button {
+    padding: 10px 50px;
+    border: none;
+    background-color: #DFC7BA;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+.button-cell button:hover {
+    background: none;
+    border: 1px black solid;
+}
+
+@media (max-width: 1000px) {
+    .header-title {
+        margin-top: -10px;
+    }
+    .header-title p {
+        font-size: 9px;
+        letter-spacing: 0.2px;
+    }
+    .button-title {
+        position: unset;
+        flex-direction: column;
+        text-align: left;
+    }
+    .cart-title {
+        padding: 30px 0 0 30px;
+    }
+    .continue-title {
+        left: 0;
+        padding-left: 10px;
+    }
+    .button-title h1 {
+        font-size: 20px;
+    }   
+    .button-title a {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+    }  
+    .container-header th {
+        padding: 7px;
+        font-size: 10px;
+    }
+    .cart-content td {
+        padding: 15px 6px;
+        font-size: 10px;
+    }
+    .product-img img {
+        width: 40px;
+        height: auto;
+    }
+    .delete-btn img {
+        width: 10px;
+        height: auto;
+    } 
+    .total-text, .totalprice-text { 
+        font-size: 10px;    
+    }   
+    .button-cell {
+        margin: 30px auto;
+    }
+    .button-cell button {
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+}

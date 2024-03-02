@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "Gotham-medium";
+    font-weight: 400;
+    font-display: fallback;
+    src: url("/fonts/Gotham-Medium.ttf") format("truetype");
+}
+
+body, html {
+    background-color: black;
+    color: white;
+    font-family: "Gotham-medium";
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/**Navbar**/
+.navbar {
+    position: fixed;
+    overflow: hidden;
+	width: 100%;
+	background-color: rgba(54, 53, 53, 0.9);
+	transition: top 0.4s;
+	box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.54);
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	display: block;
+	padding: 10px;
+	z-index: 99;
+}
+
+.navbar ul {
+    padding: 0 0 0 100px;
+	margin: 0;
+    list-style: none;
+}
+
+.navbar li {
+	float: left;
+}
+
+.navbar .logo {
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin: auto;
+	float: left;
+}
+
+.navbar a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 16px;
+	display: block;
+	padding: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: center;
+}
+
+.navbar a:hover {
+    color: grey;
+}
+
+
+.navbar #profile img {
+	float: right;
+	width: 30px;
+	height: 30px;
+}
+
+.navbar #login, .navbar #register {
+	float: right;
+	border: 1.5px solid #413f3d;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #413f3d; 
+	background-color: rgba(255, 255, 255, 0.188);
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-right: 20px;
+}
+
+.navbar #login:hover, .navbar #register:hover {
+    background-color: black;
+    color: white;
+}
+
+@media only screen and (max-width: 850px) {
+    html {
+        font-size: 2px;
+    }
+
+    .navbar {
+        padding: 0 15px;
+    }
+}
